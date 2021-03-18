@@ -1,0 +1,112 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<div class="header-text bg-light caption p-2">
+
+    <h2 class="card-header bg-light text-dark">My Requested</h2>
+    <div class="form-inline justify-content-around">
+        <div class="form-group nav navbar">
+            <label class="mr-2">From Date</label>
+            <input class="form-control" id="datetimepickerStart" type="text" readonly />
+            <button class="btn form-control btn-date" id="StartDate"></button>
+        </div>
+        <div class="form-group nav navbar">
+            <label class="mr-2">To Date</label>
+            <input class="form-control" id="datetimepickerEnd" type="text" readonly />
+            <button class="btn form-control btn-date" id="EndDate"></button>
+        </div>
+        <div class=" form-group nav navbar">
+            <label class="mr-2">Type</label>
+            <select class="form-control">
+                <option></option>
+                <option>Halu Halu</option>
+                <option>Hasagi</option>
+                <option>AAAAAAa</option>
+            </select>
+        </div>
+        <div class=" form-group nav navbar">
+            <label class="mr-2">Project</label>
+            <input class="form-control" />
+        </div>
+        <button class="btn btn-outline-success">Search</button>
+    </div>
+    <br />
+    <div class="">
+        <table class="table table-bordered" id="myTable">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>OT date</th>
+                    <th>Type</th>
+                    <th>Project Code</th>
+                    <th>Working Code</th>
+                    <th>Guest house</th>
+                    <th>Deny OT</th>
+                    <th>Undo Deny OT</th>
+                    <th>Requestor</th>
+                    <th>Request time</th>
+                    <th>Approver</th>
+                    <th>Approver time</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="text-left">
+        <button class="btn btn-outline-success" onclick="alert($('#datetimepickerStart').val())"> Submit changes</button>
+        &nbsp;
+        <button class="btn btn-outline-success"> Discard changes</button>
+    </div>
+</div>
+@section Scripts{
+    <script src="~/Scripts/jquery.datetimepicker.js"></script>
+    <script src="~/Scripts/DataTables/jquery.dataTables.min.js"></script>
+    <script>
+        $(function () {
+            $('#myTable').DataTable();
+            $("#datetimepickerStart").datetimepicker({
+                timepicker: false,
+                format: 'm/d/Y',
+                onShow: function (ct) {
+                    this.setOptions({
+                        maxDate: $('#datetimepickerEnd').val() ? $('#datetimepickerEnd').val() : false
+                    })
+                }
+            });
+
+            $("#datetimepickerEnd").datetimepicker({
+                timepicker: false,
+                format: 'm/d/Y',
+                onShow: function (ct) {
+                    this.setOptions({
+                        minDate: $('#datetimepickerStart').val() ? $('#datetimepickerStart').val() : false
+                    })
+                }
+            });
+        })
+        $("#StartDate").click(function () {
+            $("#datetimepickerStart").datetimepicker('show');
+        });
+        $("#EndDate").click(function () {
+            $("#datetimepickerEnd").datetimepicker('show');
+        })
+
+
+    </script>
+}

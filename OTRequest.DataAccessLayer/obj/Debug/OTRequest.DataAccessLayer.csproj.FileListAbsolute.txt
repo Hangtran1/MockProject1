@@ -1,0 +1,15 @@
+D:\MockProject\OTRequest.DataAccessLayer\bin\Debug\OTRequest.DataAccessLayer.dll.config
+D:\MockProject\OTRequest.DataAccessLayer\bin\Debug\OTRequest.DataAccessLayer.dll
+D:\MockProject\OTRequest.DataAccessLayer\bin\Debug\OTRequest.DataAccessLayer.pdb
+D:\MockProject\OTRequest.DataAccessLayer\bin\Debug\EntityFramework.dll
+D:\MockProject\OTRequest.DataAccessLayer\bin\Debug\EntityFramework.SqlServer.dll
+D:\MockProject\OTRequest.DataAccessLayer\bin\Debug\OTRequest.Core.dll
+D:\MockProject\OTRequest.DataAccessLayer\bin\Debug\OTRequest.Core.pdb
+D:\MockProject\OTRequest.DataAccessLayer\bin\Debug\OTRequest.Core.dll.config
+D:\MockProject\OTRequest.DataAccessLayer\bin\Debug\EntityFramework.xml
+D:\MockProject\OTRequest.DataAccessLayer\bin\Debug\EntityFramework.SqlServer.xml
+D:\MockProject\OTRequest.DataAccessLayer\obj\Debug\OTRequest.DataAccessLayer.csprojAssemblyReference.cache
+D:\MockProject\OTRequest.DataAccessLayer\obj\Debug\OTRequest.DataAccessLayer.csproj.CoreCompileInputs.cache
+D:\MockProject\OTRequest.DataAccessLayer\obj\Debug\OTRequest.DataAccessLayer.csproj.CopyComplete
+D:\MockProject\OTRequest.DataAccessLayer\obj\Debug\OTRequest.DataAccessLayer.dll
+D:\MockProject\OTRequest.DataAccessLayer\obj\Debug\OTRequest.DataAccessLayer.pdb
